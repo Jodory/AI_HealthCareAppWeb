@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>케어링</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <script defer src="./js/main.js"></script>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body>
@@ -27,13 +27,29 @@
                 <input type="password" placeholder="비밀번호" class="password">
                 <br>
                 <input type="submit" value="로그인" class="btn btn--reverse">
-                <input type="button" value="회원가입" class="btn">
+                <a href="./signup.html" class="btn">회원가입</a>
                 <br>
-                <input type="button" value="비회원으로이용하기" class="btn long__btn">
+
+                <a href="./main.html" class="btn long__btn non-members">비회원으로이용하기</a>
             </form>
         </div>
     </section>
 
 </body>
+<script>
+    function loading_st() {
+        var ct_left = (parseInt(window.screen.width) - 450) / 2;
+        var ct_top = (parseInt(window.screen.height)) / 3;
+        layer_str = "<div id='loading_layer' style='position:absolute; background-color:; font-size:15px; left:" + ct_left + "px; top:" + ct_top + "px; width:400px; height:; padding:50px; text-align:center; vertical-align:middle; z-index:1000; font-weight: bold;'>로딩중입니다.</div>"
+        document.write(layer_str);
+    }
+
+    function loading_ed() {
+        var ta = document.getElementById('loading_layer');
+        ta.style.display = 'none';
+    }
+    loading_st();
+    window.onload = loading_ed;
+</script>
 
 </html>
