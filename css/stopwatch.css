@@ -1,0 +1,51 @@
+body {
+    background: #333333;
+    margin: 0 auto;
+    padding: 100px;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+body .stop {
+    color: #fff;
+    font-size: 30px;
+}
+
+#pause {
+    display: none;
+}
+
+#reset {
+    display: none;
+}
+
+#start:hover {
+    transition: .4s;
+    cursor: pointer;
+    font-size: 36px;
+    color: antiquewhite;
+}
+
+#pause.show {
+    display: contents;
+}
+
+#start:target {}
+
+#pause:hover {
+    cursor: pointer;
+    font-size: 36px;
+    color: antiquewhite;
+}
+
+#reset:hover {
+    cursor: pointer;
+    font-size: 36px;
+    color: antiquewhite;
+}
