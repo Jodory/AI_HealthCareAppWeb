@@ -2,7 +2,6 @@
 
 body {
     background-color: antiquewhite;
-    width: 960px;
     margin: 20px auto;
     padding: 0;
 }
@@ -12,6 +11,7 @@ body {
 
 .load {
     display: flex;
+    flex-direction: column;
     position: relative;
 }
 
@@ -33,11 +33,7 @@ body {
     text-align: center;
     display: block;
     width: 100px;
-    left: calc(960px /2);
-    margin-left: -50px;
-    top: 350px;
-    position: absolute;
+    margin: 0 auto;
     font-size: 16px;
     color: rgb(40, 141, 124);
-    z-index: 1;
 }
