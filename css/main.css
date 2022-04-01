@@ -299,11 +299,11 @@
             }
             
             .login .wrap {
-                width: 500px;
                 margin: 0 auto;
                 padding: 50px;
-                border-radius: 10px;
                 background-image: url("https://t1.daumcdn.net/cfile/blog/25598C4A58DCAE5E2F");
+                background-position: center;
+                background-repeat: no-repeat;
                 height: 400px;
                 margin-top: 200px;
                 position: relative;
@@ -330,14 +330,6 @@
                 margin-top: 20px;
                 border-radius: 10px;
             }
-            /* .login .wrap form .btn {
-                width: 100px;
-                height: 50px;
-                background-color: #fff;
-                box-sizing: border-box;
-                margin-top: 20px;
-                border-radius: 10px;
-            } */
             
             .login .wrap form .btn {
                 width: 100px;
@@ -372,10 +364,14 @@
                 font-weight: 700;
                 text-align: center;
                 cursor: pointer;
-                /* boxsizing 정의 다시 공부하기 */
                 box-sizing: border-box;
                 /* 다른태그(ex:a, list)같은 태그들이 inline인데 block으로변환되게; */
                 transition: .4s;
+            }
+            
+            .login .wrap form .btn.long__btn:hover {
+                background-color: #333;
+                color: #fff;
             }
             
             .login .wrap form .btn.btn--reverse {
