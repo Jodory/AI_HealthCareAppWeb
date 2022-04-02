@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>케어링</title>
+    <title>Main</title>
     <script defer src="./js/main.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/stopwatch.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+
 </head>
 
 <body>
@@ -17,24 +21,52 @@
         <div class="loading"></div>
         <div id="loading-text">CareRing<br><br><span>캡스톤1조<br>케어링</span></div>
     </div>
-    <!-- 메인화면 로그인창 -->
-    <section class="login">
-        <div class="wrap">
-            <h1>메인화면 로그인창</h1>
-            <form>
-                <input type="email" placeholder="이메일" class="email">
-                <br>
-                <input type="password" placeholder="비밀번호" class="password">
-                <br>
-                <input type="submit" value="로그인" class="btn btn--reverse">
-                <a href="./stopwatch.html" class="btn">회원가입</a>
 
-                <br>
+    <!-- 네비게이션 -->
+    <input type="checkbox" id="navInput">
 
-                <a href="./test.html" class="btn long__btn non-members">비회원으로이용하기</a>
-            </form>
+    <label class="openbtn" for="navInput">
+        <div id="openbtn-top"></div>
+        <div id="openbtn-mid"></div>
+        <div id="openbtn-bot"></div>
+      </label>
+
+    <nav id="nav">
+        <a href="./login.html">로그인</a>
+        <a href="./test.html">운동관상알아보기</a>
+        <a href="./stopwatch.html">스톱워치</a>
+        <a href="#">인바디입력+운동추천</a>
+        <a href="#">운동 자세 교정</a>
+        <a href="#">식단 추천</a>
+        <a href="#">운동 캘린더</a>
+    </nav>
+    <!-- <nav>
+        <div class="menu">
+            <div id="menu__top" class="material-icons">menu</div>
+
         </div>
-    </section>
+    </nav> -->
+    <div class="main-start">
+        <div class="main"></div>
+        <div id="main-text" class="material-icons">play_arrow</div>
+    </div>
+
+    <div class="stopwatch__menu">
+        <h1 id="stopwatch">
+            00:00:00
+        </h1>
+        <div>
+            <div class="stop">
+                <span class="material-icons" id="start">play_circle</span>
+                <span class="material-icons" id="pause">pause_circle_filled</span>
+                <span class="material-icons" id="reset">restart_alt</span>
+            </div>
+            <div class="record">
+
+            </div>
+        </div>
+    </div>
+
 
 </body>
 

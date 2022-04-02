@@ -12,8 +12,8 @@ function printTime() {
     time++;
     stopwatch.innerText = getTimeFormatString();
     // console.log(getTimeFormatString())
-    if (getTimeFormatString() === "00:00:03")
-        alert('Error!')
+    // if (getTimeFormatString() === "00:00:03")
+    //     alert('Error!')
 }
 
 //시계 시작 - 재귀호출로 반복실행
