@@ -38,6 +38,7 @@ body {
 }
 
 .file-upload-btn:hover {
+    transition: 1s;
     background: #1AA059;
     color: #ffffff;
     transition: all .2s ease;
@@ -79,7 +80,8 @@ body {
 
 .image-dropping,
 .image-upload-wrap:hover {
-    background-color: #1FB264;
+    transition: .4s;
+    background-color: rgb(104, 231, 125);
     border: 4px dashed #ffffff;
 }
 

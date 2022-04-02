@@ -27,6 +27,10 @@ body .stop .material-icons {
     display: none;
 }
 
+#start {
+    color: rgb(113, 212, 113);
+}
+
 #start:hover {
     transition: .4s;
     cursor: pointer;

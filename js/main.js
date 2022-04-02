@@ -10,3 +10,13 @@ loading.addEventListener('click', function() {
 
     login.style.display = 'contents'
 })
+
+setTimeout(function() {
+    loading.style.display = 'none';
+
+    login.style.display = 'contents'
+}, Math.random(1000) * 5000)
+
+btn.addEventListener('click', function() {
+    loading.style.display = 'contents';
+})

@@ -11,6 +11,9 @@ const reset = document.querySelector('#reset')
 function printTime() {
     time++;
     stopwatch.innerText = getTimeFormatString();
+    // console.log(getTimeFormatString())
+    if (getTimeFormatString() === "00:00:03")
+        alert('Error!')
 }
 
 //시계 시작 - 재귀호출로 반복실행
@@ -25,6 +28,7 @@ function pauseClock() {
     if (timerId != null) {
         clearTimeout(timerId);
     }
+
     // let record = "<h2>" + getTimeFormatString() + "</h2>"
     // document.querySelector(".record").innerHTML = record
 
