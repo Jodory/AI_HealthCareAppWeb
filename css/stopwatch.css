@@ -7,14 +7,16 @@ body {
 }
 
 body h1 {
-    font-size: 50px;
+    font-size: 100px;
     color: #fff;
     margin-bottom: 20px;
 }
 
-body .stop {
+body .stop .material-icons {
+    display: block;
+    margin: 0 50px;
+    font-size: 50px;
     color: #fff;
-    font-size: 30px;
 }
 
 #pause {
@@ -28,7 +30,7 @@ body .stop {
 #start:hover {
     transition: .4s;
     cursor: pointer;
-    font-size: 36px;
+    font-size: 60px;
     color: antiquewhite;
 }
 
@@ -36,16 +38,14 @@ body .stop {
     display: contents;
 }
 
-#start:target {}
-
 #pause:hover {
     cursor: pointer;
-    font-size: 36px;
+    font-size: 60px;
     color: antiquewhite;
 }
 
 #reset:hover {
     cursor: pointer;
-    font-size: 36px;
+    font-size: 60px;
     color: antiquewhite;
 }
