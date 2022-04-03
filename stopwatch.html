@@ -19,7 +19,18 @@
     <div class="main-start">
         <div class="main"></div>
         <span id="main-text" class="material-icons">play_arrow</span>
+
+        <!-- 시간초설정 -->
+        <select name="timeset" class="timeset" id="select1" onchange="alert_select_value(this);">
+        <option value="">알림시간선택</option>
+        <option value="10">10초</option>
+        <option value="15">15초</option>
+        <option value="30">30초</option>
+        <option value="45">45초</option>
+        <option value="60">1분</option>
+    </select>
     </div>
+
     <div id="watch">
         <h1 id="stopwatch">
             00:00:00
