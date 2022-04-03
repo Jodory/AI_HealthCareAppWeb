@@ -1,3 +1,59 @@
+/** BEGIN CSS **/
+
+body {
+    background: #333333;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body h1 {
+    font-size: xx-large;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.main-start {
+    height: 300px;
+    position: relative;
+    width: 300px;
+    background-color: #333;
+    border: 3px solid rgb(112, 211, 112);
+    border-radius: 100%;
+    /* color: rgb(112, 211, 112); */
+    color: #fff;
+    box-sizing: border-box;
+    /* display: none; */
+    margin: 200px auto;
+}
+
+.main-start:hover {
+    cursor: pointer;
+    background-color: #fff;
+    border-color: red;
+    transition: .4s;
+    transform: scale(1.1);
+}
+
+.main-start:active {
+    background-color: rgb(112, 211, 112);
+}
+
+.main-start #main-text {
+    line-height: 300px;
+    height: 300px;
+    text-align: center;
+    font-size: 100px;
+}
+
+.main-start:hover #main-text {
+    color: #333;
+    transition: .4s;
+    transform: scale(1.2);
+}
+
+
 /* Drawer Menu */
 
 *,
@@ -141,6 +197,10 @@ body .stop .material-icons {
     margin: 0 50px;
     font-size: 50px;
     color: #fff;
+}
+
+#watch {
+    display: none;
 }
 
 #pause {

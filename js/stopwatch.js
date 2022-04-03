@@ -3,6 +3,10 @@ let time = 0;
 const stopwatch = document.getElementById("stopwatch");
 let hour, min, sec;
 
+const main_start = document.querySelector('#main-text')
+const main = document.querySelector('.main-start')
+
+const watch = document.querySelector('#watch')
 
 const start = document.querySelector('#start')
 const pause = document.querySelector('#pause')
@@ -50,9 +54,17 @@ function getTimeFormatString() {
     return String(hour).padStart(2, '0') + ":" + String(min).padStart(2, '0') + ":" + String(sec).padStart(2, '0');
 }
 
-
+main_start.addEventListener('click', function() {
+    main.style.display = "none"
+    watch.style.display = "contents"
+    pause.style.display = "contents"
+    reset.style.display = "contents"
+    start.style.display = "none"
+    startClock()
+})
 
 start.addEventListener('click', function() {
+
     pause.style.display = "contents"
     reset.style.display = "contents"
     start.style.display = "none"
@@ -67,6 +79,8 @@ pause.addEventListener('click', function() {
 reset.addEventListener('click', function() {
     pause.style.display = "none"
     reset.style.display = "none"
-    start.style.display = "contents"
+    start.style.display = "none"
+    main.style.display = "block"
+    watch.style.display = "none"
     resetClock()
 })
