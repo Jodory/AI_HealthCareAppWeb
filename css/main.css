@@ -471,12 +471,10 @@ body h1 {
 
 .main-start:hover {
     cursor: pointer;
-    color: #333;
     background-color: #fff;
     border-color: red;
     transition: .4s;
     transform: scale(1.1);
-    font-size: 60px;
 }
 
 .main-start:active {
@@ -490,12 +488,19 @@ body h1 {
     font-size: 100px;
 }
 
-#main-text span {
+.main-start:hover #main-text {
+    color: #333;
+    transition: .4s;
+    transform: scale(1.2);
+}
+
+
+/* #main-text {
     font-size: 12px;
     height: 20px;
     width: 300px;
     right: 0;
-}
+} */
 
 .stopwatch__menu {
     display: none;
