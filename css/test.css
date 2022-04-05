@@ -200,6 +200,7 @@ body {
     border-radius: 10px;
     border: dashed 1.5px #35465d;
     background-color: #ffffff;
+    overflow: hidden;
 }
 
 .image-dropping,
