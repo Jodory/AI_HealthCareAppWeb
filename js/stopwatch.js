@@ -33,7 +33,13 @@ function printTime() {
     if (getTimeFormatString() === num) {
         setTimeout(function() {
             alert(selected_value + "초 완료!")
-        }, 500)
+            pause.style.display = "none"
+            reset.style.display = "none"
+            start.style.display = "none"
+            main.style.display = "block"
+            watch.style.display = "none"
+            resetClock()
+        }, 100)
 
     }
 }
