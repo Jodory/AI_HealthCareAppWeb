@@ -11,9 +11,6 @@
     <script>
         const size = 200;
         const flip = true; // whether to flip the webcam
-        webcam = new tmPose.Webcam(size, size, flip); // width, height, flip
-        await webcam.setup(); // request access to the webcam
-        await webcam.play();
 
         const main = document.querySelector('.main-start')
         const canvas = document.querySelector('#canvas')
@@ -56,11 +53,11 @@
             // Convenience function to setup a webcam
 
 
-            // const size = 200;
-            // const flip = true; // whether to flip the webcam
-            // webcam = new tmPose.Webcam(size, size, flip); // width, height, flip
-            // await webcam.setup(); // request access to the webcam
-            // await webcam.play();
+            const size = 200;
+            const flip = true; // whether to flip the webcam
+            webcam = new tmPose.Webcam(size, size, flip); // width, height, flip
+            await webcam.setup(); // request access to the webcam
+            await webcam.play();
 
 
 
