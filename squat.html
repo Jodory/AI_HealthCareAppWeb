@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="./css/squat.css">
     <!-- <script defer src="./js/squat.js"></script> -->
     <script>
+        const size = 200;
+        const flip = true; // whether to flip the webcam
+        webcam = new tmPose.Webcam(size, size, flip); // width, height, flip
+        await webcam.setup(); // request access to the webcam
+        await webcam.play();
+
         const main = document.querySelector('.main-start')
         const canvas = document.querySelector('#canvas')
-
 
         main.addEventListener('click', function() {
             main.style.display = "none"
@@ -48,11 +53,16 @@
             maxPredictions = model.getTotalClasses();
 
             // Convenience function to setup a webcam
-            const size = 200;
-            const flip = true; // whether to flip the webcam
-            webcam = new tmPose.Webcam(size, size, flip); // width, height, flip
-            await webcam.setup(); // request access to the webcam
-            await webcam.play();
+
+
+            // const size = 200;
+            // const flip = true; // whether to flip the webcam
+            // webcam = new tmPose.Webcam(size, size, flip); // width, height, flip
+            // await webcam.setup(); // request access to the webcam
+            // await webcam.play();
+
+
+
             window.requestAnimationFrame(loop);
 
             // append/get elements to the DOM
