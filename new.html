@@ -69,7 +69,8 @@
             const prediction = await model.predict(posenetOutput);
 
             for (let i = 0; i < maxPredictions; i++) {
-                console.log(prediction[i].probability.toFixed(2));
+                console.log(prediction[i].probability);
+                console.log(prediction[i]);
                 const classPrediction =
                     prediction[i].className + ": " + prediction[i].probability.toFixed(2);
                 labelContainer.childNodes[i].innerHTML = classPrediction;
