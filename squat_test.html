@@ -46,8 +46,6 @@
             await webcam.setup(); // request access to the webcam
             await webcam.play();
 
-
-
             window.requestAnimationFrame(loop);
 
             // append/get elements to the DOM
@@ -114,7 +112,7 @@
 
 
             for (let i = 0; i < maxPredictions; i++) {
-                console.log(maxPredictions);
+                console.log(i);
                 const classPrediction =
                     "<h1>" + prediction[i].className + ": " + prediction[i].probability.toFixed(2) + "</h1>";
                 labelContainer.childNodes[i].innerHTML = classPrediction;
