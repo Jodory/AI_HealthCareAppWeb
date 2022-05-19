@@ -96,8 +96,6 @@
             }
 
             for (let i = 0; i < maxPredictions; i++) {
-                console.log(prediction[i].probability);
-                console.log(prediction[i]);
                 const classPrediction =
                     "<h1>" + prediction[i].className + ": " + prediction[i].probability.toFixed(2) + "</h1>";
                 labelContainer.childNodes[i].innerHTML = classPrediction;
