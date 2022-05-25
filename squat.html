@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Squat Test</title>
+    <title>스쿼트 자세 교정</title>
     <link rel="stylesheet" href="./css/squat.css">
     <script defer src="./js/squat.js"></script>
 </head>
 
 <body>
     <h1>스쿼트 자세 교정<br></h1>
-
 
     <button type="button" class="main-start" onclick="init()"><h1>시작</h1></button>
     <div>
@@ -21,10 +20,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
     <script type="text/javascript">
-        // More API functions here:
         // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/pose
 
-        // the link to your model provided by Teachable Machine export panel
         const URL = "./squat_model/";
         let model, webcam, ctx, labelContainer, maxPredictions;
 
@@ -130,8 +127,8 @@
 
     <nav id="nav">
         <a href="./index.html">스톱워치</a>
-        <a href="./test.html">운동관상알아보기</a>
-        <a href="./login.html">카카오로그인(예정)</a>
+        <a href="./facereader.html">운동관상알아보기</a>
+        <a href="#">카카오로그인(예정)</a>
         <a href="#">눈바디알아보기(예정)</a>
         <a href="#">음식칼로리계산(예정)</a>
         <a href="#">운동MBTI(예정)</a>
