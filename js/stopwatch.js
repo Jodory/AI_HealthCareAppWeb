@@ -1,3 +1,4 @@
+//stopwatch.js
 let timerId;
 let time = 0;
 const stopwatch = document.getElementById("stopwatch");

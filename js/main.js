@@ -1,3 +1,4 @@
+// main.js
 // 로딩 창 
 const main = document.querySelector(".main-start")
 const loading = document.querySelector(".loading-container")
