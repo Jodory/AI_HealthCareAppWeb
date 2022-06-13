@@ -51,7 +51,7 @@
             canvas.height = size;
             ctx = canvas.getContext("2d");
             labelContainer = document.getElementById("label-container");
-            for (let i = 0; i < maxPredictions + 1; i++) { // and class labels
+            for (let i = 0; i < maxPredictions; i++) { // and class labels
                 labelContainer.appendChild(document.createElement("h1"));
             }
         }
@@ -93,12 +93,8 @@
             }
 
             for (let i = 0; i < maxPredictions + 1; i++) {
-                if (i == 3) {
-                    const classPrediction = "<h1>수행횟수: " + count + "</h1>";
-                } else {
-                    const classPrediction =
-                        "<h1>" + prediction[i].className + ": " + prediction[i].probability.toFixed(2) + "</h1>";
-                }
+                const classPrediction =
+                    "<h1>" + prediction[i].className + ": " + prediction[i].probability.toFixed(2) + "</h1>";
                 labelContainer.childNodes[i].innerHTML = classPrediction;
             }
 
