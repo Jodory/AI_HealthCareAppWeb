@@ -26,7 +26,8 @@ body h1 {
     position: relative;
     width: 300px;
     background-color: #333;
-    border: 3px solid rgb(112, 211, 112);
+    /* border: 3px solid rgb(112, 211, 112); */
+    border: 3px solid #008000;
     border-radius: 100%;
     /* color: rgb(112, 211, 112); */
     color: #fff;
@@ -44,7 +45,8 @@ body h1 {
 }
 
 .main-start:active {
-    background-color: rgb(112, 211, 112);
+    /* background-color: rgb(112, 211, 112); */
+    background-color: #008000;
 }
 
 .main-start #main-text {
@@ -229,7 +231,8 @@ a:hover {
 }
 
 #start {
-    color: rgb(113, 212, 113);
+    /* color: rgb(113, 212, 113); */
+    color: #008000;
 }
 
 #start:hover {

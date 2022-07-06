@@ -6,12 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입창</title>
+    <script defer src="./js/signup.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="./css/signup.css">
 </head>
 
 <body>
-    <h1>회원가입창</h1>
+    <!-- 로딩화면 -->
+    <div class="loading-container">
+        <div class="loading"></div>
+        <div id="loading-text">CareRing<br><br><span>캡스톤1조<br>케어링</span></div>
+    </div>
+
+
     <!-- 네비게이션 -->
     <input type="checkbox" id="navInput">
 
@@ -22,9 +29,13 @@
       </label>
 
     <nav id="nav">
+        <a href="./login.html">마이페이지</a>
         <a href="./index.html">스톱워치</a>
         <a href="./facereader.html">운동관상알아보기</a>
-        <a href="#">카카오로그인(예정)</a>
+        <a href="#">커뮤니티(예정)</a>
+        <a href="#">캘린더(예정)</a>
+        <a href="#">자세교정(예정)</a>
+        <a href="#">칼로리계산(예정)</a>
         <a href="#">눈바디알아보기(예정)</a>
         <a href="#">음식칼로리계산(예정)</a>
         <a href="#">운동MBTI(예정)</a>
@@ -33,6 +44,29 @@
         <!-- <a href="./community.html">커뮤니티</a> -->
         <!-- <a href="#">운동 캘린더</a> -->
     </nav>
+
+    <section class="signup">
+        <div class="wrap">
+            <h1>회원가입창</h1>
+            <form>
+                <h3 class="id">아이디</h3>
+                <input type="email" placeholder="내용을 입력해주세요" class="email">
+
+                <h3 class="pass">비밀번호</h3>
+                <input type="password" placeholder="내용을 입력해주세요" class="password_1">
+
+                <h3 class="pass2">비밀번호확인</h3>
+                <input type="password" placeholder="내용을 입력해주세요" class="password_2">
+                <br>
+                <input type="submit" value="회원가입" class="btn btn--reverse">
+                <a href="./signup.html" class="btn">아이디찾기</a>
+
+                <br>
+
+                <a href="#" class="btn long__btn non-members">비밀번호찾기</a>
+            </form>
+        </div>
+    </section>
 
 </body>
 
