@@ -1,3 +1,15 @@
+/* Home */
+
+#home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    width: 25px;
+    height: 4px;
+}
+
+
 /* squat.css */
 
 
