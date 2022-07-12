@@ -20,4 +20,5 @@ setTimeout(function() {
 
 btn.addEventListener('click', function() {
     loading.style.display = 'contents';
+    login.style.display = 'none'
 })
