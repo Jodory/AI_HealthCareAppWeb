@@ -1,28 +1,5 @@
 // login.js
 
-const loading = document.querySelector(".loading-container")
-const login = document.querySelector('.login')
-const nonMembers = document.querySelector('.login .none-members')
-
-const btn = document.querySelector('.btn')
-const all = document.querySelector('body')
-
-loading.addEventListener('click', function() {
-    loading.style.display = 'none';
-
-    login.style.display = 'contents'
-})
-
-setTimeout(function() {
-    loading.style.display = 'none';
-
-    login.style.display = 'contents'
-}, Math.random(1000) * 5000)
-
-// btn.addEventListener('click', function() {
-//     loading.style.display = 'contents';
-//     login.style.display = 'none'
-// })
 
 
 document.querySelector("#btn").addEventListener("click", () => {
@@ -32,7 +9,7 @@ document.querySelector("#btn").addEventListener("click", () => {
     if (id == document.querySelector("#id").value) {
         if (password == document.querySelector("#password").value) {
 
-            location.href = "index.html";
+            location.href = "../index.html";
             alert("환영합니다!");
             //document.write("환영합니다!");
 
